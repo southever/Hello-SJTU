@@ -1,0 +1,52 @@
+:root {
+    --bs-font-sans-serif: 'Noto Sans SC', 'Source Han Sans SC',
+        'PingFang SC', 'Microsoft YaHei', '微软雅黑',
+        Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    font-weight: 500;
+    padding-top: var(--bs-navbar-height, 56px);
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;         
+}
+
+
+
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card {
+    max-width: 600px;
+    width: 100%;     /* 自适应屏幕，保证不超出 */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;  /* 包括 padding/border 在宽度内 */
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;   /* 保持响应式换行 */
+    gap: 1.5rem;       /* 卡片间距 */
+}
+
+.row .col-md-6 {
+    display: flex;
+    justify-content: center; /* 水平居中卡片 */
+}
+.card-body .btn {
+    width: auto;       /* 保证按钮宽度自适应内容 */
+    align-self: center; /* 水平居中按钮 */
+}
+
